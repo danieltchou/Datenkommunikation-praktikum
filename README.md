@@ -1,1 +1,2 @@
-# Datenkommunikation-praktikum
+# Datenkommunikation Praktikum
+AIF 3.Semester
