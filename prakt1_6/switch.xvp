@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="switch">
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X05255b9eebaf6e410fe8317e0360de4cf88d" ControlName="Track Bar 1">
+      <Property Name="Name">X05255b9eebaf6e410fe8317e0360de4cf88d</Property>
+      <Property Name="Size">268, 30</Property>
+      <Property Name="Location">5, 134</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="MaximumDouble">100</Property>
+      <Property Name="MinimumDouble">-100</Property>
+      <Property Name="SmallChangeDouble">0.1</Property>
+      <Property Name="LargeChangeDouble">0.1</Property>
+      <Property Name="TickFrequencyDouble">200</Property>
+      <Property Name="MaximumSize">100000, 30</Property>
+      <Property Name="Minimum">-100</Property>
+      <Property Name="Maximum">100</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="TickFrequency">200</Property>
+      <Property Name="SymbolConfiguration">8;16;aufg1_6;;;evPoti;2;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xf5c0f958e501ce4439ea7d1e66620c7a61e1" ControlName="Static Text 1">
+      <Property Name="Name">Xf5c0f958e501ce4439ea7d1e66620c7a61e1</Property>
+      <Property Name="Size">69, 15</Property>
+      <Property Name="Location">5, 71</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+      <Property Name="Text">AAAAAAAA</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X57a3ff8fe081fe4923e80fcea78389571bde" ControlName="Switch / Indicator 1">
+      <Property Name="Name">X57a3ff8fe081fe4923e80fcea78389571bde</Property>
+      <Property Name="Size">23, 30</Property>
+      <Property Name="Location">28, 35</Property>
+      <Property Name="SymbolConfiguration">8;16;aufg1_6;;;evSwitch;1;;;-1;;;Value;;;0</Property>
+      <Property Name="ImageFile">lOrgPushButton_2.bmp</Property>
+      <Property Name="TabIndex">1</Property>
+      <Property Name="Epsilon">0</Property>
+      <Property Name="Increment">1</Property>
+      <Property Name="StartValue">0</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">278, 229</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">255, 255, 255, 255</Property>
+  </Object>
+</Panel>

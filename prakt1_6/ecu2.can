@@ -1,0 +1,16 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+on message Msg1
+{
+  @aufg1_6::evLight = this.bsSwitch;
+  @aufg1_6::evMotor = this.Motor;
+}

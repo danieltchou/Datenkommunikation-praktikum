@@ -1,0 +1,22 @@
+/*@!Encoding:1252*/
+variables{
+  int counter;
+}
+
+on message EngineData
+{
+  counter++;
+  output(this);
+}
+
+on message*
+{
+  output(this);
+}
+
+on key 'a'
+{
+  write("%d Botschaften EngineData", counter);
+  counter = 0;
+}
+

@@ -1,0 +1,24 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  message Msg1 msg;
+}
+
+on sysvar aufg1_6::evSwitch
+{
+  msg.bsSwitch = @this;
+  msg.Motor = @aufg1_6::evPoti;
+  output(msg);
+}
+
+on sysvar aufg1_6::evPoti
+{
+  msg.bsSwitch = @aufg1_6::evSwitch;
+  msg.Motor = @aufg1_6::evPoti;
+  output(msg);
+}
