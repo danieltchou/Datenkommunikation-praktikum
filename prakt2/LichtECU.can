@@ -1,0 +1,30 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+void setzeLichterImDisplay(long fernlicht, long warnblinken){
+  if (warnblinken == 1){
+    if (fernlicht == 1){
+      @Env::EnvDisplaylicht = 7;
+    } else {
+      @Env::EnvDisplaylicht = 3;
+    }
+  } else {
+    if (fernlicht == 1){
+      @Env::EnvDisplaylicht = 4;
+    } else {      
+      @Env::EnvDisplaylicht = 0;
+    }
+  }
+}
+
+on message Lichtbotschaft{
+  setzeLichterImDisplay(this.Fernlichtsignal, this.Warnblinklichtsignal);
+}

@@ -1,0 +1,29 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  message Motorbotschaft msg;
+}
+
+on sysvar Env::EnvSchalterZuendung{
+  msg.Zuendungssignal = @this;
+  if(@this==0){
+    msg.Motordrehzahl=0;
+  } else {
+    msg.Motordrehzahl=@Env::EnvEingabeDrehzahl;
+  }
+  output(msg);
+}
+
+on sysvar Env::EnvEingabeDrehzahl{
+  if(@Env::EnvSchalterZuendung==1){
+    msg.Motordrehzahl=@Env::EnvEingabeDrehzahl;
+  } else {
+    msg.Motordrehzahl=0;
+  }
+  output(msg);
+}

@@ -1,0 +1,38 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer TimerRelais;
+  const int TimerPeriod = 500;
+  message Lichtbotschaft msg;
+}
+
+on sysvar Env::EnvSchalterFernlicht {
+  msg.Fernlichtsignal = @this;
+  output(msg);
+}
+
+on sysvar Env::EnvSchalterWarnblinken{
+  if(@this==1){
+    setTimer(TimerRelais, TimerPeriod);
+  } 
+  if(@this==0){
+    cancelTimer(TimerRelais);
+  }
+}
+
+on message Motorbotschaft{
+  @Env::EnvDisplayZuendung = this.Zuendungssignal;
+  @Env::EnvDisplayDrehzahlText = this.Motordrehzahl;
+  @Env::EnvDisplayDrehzahlAnalog = this.Motordrehzahl/1000.0;
+} 
+
+on timer TimerRelais{
+  msg.Warnblinklichtsignal=!msg.Warnblinklichtsignal;
+  output(msg);
+  setTimer(TimerRelais, TimerPeriod);
+}
