@@ -1,0 +1,68 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  linFrame BRC_CTR_ASP_LIN_K_LIN_1 msg;
+}
+
+on start{
+  msg.BRC_CTR_EXMI_LIN_K_LIN_1 = 0; //Broadcast_Steuerung_Außenspiegel_LIN
+  msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 0; //Broadcast_Steuerung_Außenspiegel_Verstellung_LIN
+  msg.BRC_CTR_EXMI_FMIR_LIN_K_LIN_1 = 0; //Broadcast_Steuerung_Außenspiegel_Beiklappen_LIN
+  msg.BRC_CTR_ECR_EXMI_DIP_LIN_K_LIN_1 = 0; //Broadcast_Steuerung_Elektrochrom_Außenspiegel_Abblenden_LIN
+  msg.BRC_CTR_HT_EXMI_K_LIN_1 = 0; //Broadcast_Steuerung_Heizung_Außenspiegel
+  msg.CTR_DIM_DSE_LNCH_LIN_K_LIN_1 = 0; //Steuerung_Dimmung_Anzeigesegment_Fahrspurwechsel_LIN
+  msg.CTR_DSE_1_LH_WARN_LNCH_LIN_K_LIN_1 = 0; //Steuerung_Anzeigesegment_1_Links_Warnung_Fahrspurwechsel_LIN
+  msg.CTR_DSE_1_RH_WARN_LNCH_LIN_K_LIN_1 = 0; //Steuerung_Anzeigesegment_1_Rechts_Warnung_Fahrspurwechsel_LIN
+  msg.CTR_SCAL_IDC_DSE_WARN_LNCH_LIN_K_LIN_1 = 0; //Steuerung_Skalierung_Blinken_Anzeigesegment_Warnung_Fahrspurwechsel_LIN
+  output(msg);
+}
+
+on sysVar e_einklappen
+{
+/* BRC_CTR_EXMI_FMIR_LIN == 1/0 --> einklappen/stoppen */
+  if(@this == 1) msg.BRC_CTR_EXMI_FMIR_LIN_K_LIN_1 = 1;
+  else msg.BRC_CTR_EXMI_FMIR_LIN_K_LIN_1 = 0;
+  output(msg); /* kein Senden, nur als geändert markiert */
+}
+on sysvar e_ausklappen {
+  if(@this == 1) msg.BRC_CTR_EXMI_FMIR_LIN_K_LIN_1 = 2;
+  else msg.BRC_CTR_EXMI_FMIR_LIN_K_LIN_1 = 0;
+  output(msg);
+}
+on sysvar e_abwaerts {
+  if(@this == 1) msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 8;
+  else msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 0;
+  output(msg);
+}
+on sysvar e_aufwaerts {
+  if(@this == 1) msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 4;
+  else msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 0;
+  output(msg);
+}
+on sysvar e_init {
+  msg.BRC_CTR_EXMI_LIN_K_LIN_1 = 0; 
+  msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 0;
+  msg.BRC_CTR_EXMI_FMIR_LIN_K_LIN_1 = 0;
+  msg.BRC_CTR_ECR_EXMI_DIP_LIN_K_LIN_1 = 0;
+  msg.BRC_CTR_HT_EXMI_K_LIN_1 = 0;
+  msg.CTR_DIM_DSE_LNCH_LIN_K_LIN_1 = 0;
+  msg.CTR_DSE_1_LH_WARN_LNCH_LIN_K_LIN_1 = 0;
+  msg.CTR_DSE_1_RH_WARN_LNCH_LIN_K_LIN_1 = 0;
+  msg.CTR_SCAL_IDC_DSE_WARN_LNCH_LIN_K_LIN_1 = 0;
+  output(msg);
+}
+on sysvar e_links {
+  if(@this == 1) msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 1;
+  else msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 0;
+  output(msg); 
+}
+on sysvar e_rechts {
+  if(@this == 1) msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 2;
+  else msg.BRC_CTR_EXMI_AD_LIN_K_LIN_1 = 0;
+  output(msg);
+}

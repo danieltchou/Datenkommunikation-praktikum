@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="Steuerung">
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xba8ea623e36dfe40bcea85ee52ad8617e2d0" ControlName="Button 7">
+      <Property Name="Name">Xba8ea623e36dfe40bcea85ee52ad8617e2d0</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">64, 136</Property>
+      <Property Name="TabIndex">7</Property>
+      <Property Name="Text">Ausklappen</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_ausklappen;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xcffde8b8ebaece44a0e85d0e14e425eb0844" ControlName="Button 6">
+      <Property Name="Name">Xcffde8b8ebaece44a0e85d0e14e425eb0844</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">484, 226</Property>
+      <Property Name="TabIndex">6</Property>
+      <Property Name="Text">init</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_init;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X8c55b172e912ae4561eaefae030f6eee2a79" ControlName="Button 5">
+      <Property Name="Name">X8c55b172e912ae4561eaefae030f6eee2a79</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">310, 211</Property>
+      <Property Name="TabIndex">5</Property>
+      <Property Name="Text">ab</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_abwaerts;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X2c2475a7e8bb2e4abeea6c8e877962ea1093" ControlName="Button 4">
+      <Property Name="Name">X2c2475a7e8bb2e4abeea6c8e877962ea1093</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">387, 165</Property>
+      <Property Name="TabIndex">4</Property>
+      <Property Name="Text">re</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_rechts;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X2fbbacdae56f3e4183ebf8beb5822086a6c3" ControlName="Button 3">
+      <Property Name="Name">X2fbbacdae56f3e4183ebf8beb5822086a6c3</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">310, 108</Property>
+      <Property Name="TabIndex">3</Property>
+      <Property Name="Text">auf</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_aufwaerts;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X4b1226b0e67c8e4f6eea29ce047ca43b8d24" ControlName="Button 2">
+      <Property Name="Name">X4b1226b0e67c8e4f6eea29ce047ca43b8d24</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">229, 165</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="Text">li</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_links;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X12700dd7edb14e4c67e872fe931d69930296" ControlName="Button 1">
+      <Property Name="Name">X12700dd7edb14e4c67e872fe931d69930296</Property>
+      <Property Name="Size">75, 23</Property>
+      <Property Name="Location">64, 76</Property>
+      <Property Name="TabIndex">1</Property>
+      <Property Name="Text">Einklappen</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;e_einklappen;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">580, 270</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">255, 255, 255, 255</Property>
+  </Object>
+</Panel>
